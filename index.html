@@ -22,15 +22,43 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <header>
+<!-- Responsiv navigation för header och toppmeny.
+Grundkod hämtad från w3schools.com: responsiv topnav resp class=topmenu som kombinerat i webstorm.  -->
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="topmenu">
+    <div><img src="Santa.png" height="45" width="45"/></div>
+    <div><h3>Santa's list</h3></div>
 
-  <div class="topnav">
-    <img src="Santa.png" height="45" width="45"/>
-    <a class="active" href="#index">Home</a>
-    <a href="#categories">Kategorier A-Ö</a>
-    <a href="#listmaker">Slumpa en önskelista</a>
-    <a href="#favorites">Min önskelista</a>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="categories.html">Kategorier A-Ö</a>
+    <a href="listmaker.html">Slumpa önskelista</a>
+    <a href="favorites.html">Min önskelista</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
+    <div><img src="Favorite.png" height="20" width="20"/></div>
+  </div>
+  <!-- This is the original, non-responsive header
+  <div class="topmenu">
+    <div><img src="Santa.png" height="45" width="45"/></div>
+    <div><h3>Santa's list</h3></div>
+
+    <div class="topnav">
+
+      <a class="active" href="#index">Home</a>
+      <a href="categories.html">Kategorier A-Ö</a>
+      <a href="listmaker.html">Slumpa en önskelista</a>
+      <a href="favorites.html">Min önskelista</a>
+
+    </div>
+    <div><img src="Favorite.png" height="20" width="20"/></div>
+  </div>
+-->
+
+
 </header>
 <body>
 
