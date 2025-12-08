@@ -116,5 +116,6 @@ setTimeout(() => {
   clearInterval(interval);
 }, 5000); // Stop creating snowflakes after 5 seconds
 
+
 // Fetch products initially
 fetchProducts(); // Call function to load products

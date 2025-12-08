@@ -1,42 +1,62 @@
-html
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Kategorier A-Ö</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Kategorier A-Ö | Santa's List</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-<header>
-  <div class="topmenu">
-    <div class="logo">
-      <img src="Santa.png" height="45" width="45"/>
-      <p>Santa's List</p>
-    </div>
-    <nav id="myTopnav">
-      <a href="index.html">Hem</a>
-      <a href="categories.html" class="active">Kategorier A-Ö</a>
-      <a href="listmaker.html">Slumpa önskelista</a>
-      <a href="favorites.html">Min önskelista</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </nav>
-  </div>
-</header>
+    <header>
+        <div class="header-container">
+            <nav class="topnav" id="myTopnav">
+                <div class="logo-container">
+                    <picture>
+                        <source media="(min-width:600px)" srcset="icons/SantaBlock.png">
+                        <img src="icons/Santa.png" alt="Santa's List Logo" class="logo">
+                    </picture>
+                    <h1>Santa's List</h1>
+                </div>
 
-<main>
-  <h1>Kategorier A-Ö</h1>
-  <div class="categories" id="categories-list"></div> <!-- Placeholder for categories -->
-</main>
+                <div class="nav-links">
+                    <a href="index.html">Hem</a>
+                    <a href="categories.html" class="active">
+                        <img src="icons/A-O.png" alt="Kategorier">
+                        Kategorier A-Ö
+                    </a>
+                    <a href="listmaker.html">
+                        <img src="icons/dice.png" alt="Slumpa lista">
+                        Slumpa önskelista
+                    </a>
+                    <a href="favorites.html">
+                        <img src="icons/User Male.png" alt="Min lista">
+                        Min önskelista
+                    </a>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<footer>
-  <p><a href="https://designingtara.com/">Meet the designer</a></p>
-</footer>
+    <main>
+        <div class="categories">
+            <h1>Kategorier A-Ö</h1>
+            <div id="category-list">
+                <!-- Categories will be dynamically populated here -->
+            </div>
+        </div>
+    </main>
 
-<script src="js/app.js" defer></script>
+    <footer>
+        <div class="footer-content">
+            <p>
+                <a href="https://designingtara.com/">Möt designern</a>
+            </p>
+            <p>&copy; 2025 Santa's List. Alla rättigheter reserverade.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
-
 </html>
