@@ -1,0 +1,168 @@
+Index.html
+<!doctype html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santa's List</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="topmenu">
+    <div class="logo">
+      <img src="Santa.png" height="45" width="45"/>
+      <p>Santa's List</p>
+    </div>
+    <nav id="myTopnav">
+      <a href="index.html" class="active">Hem</a>
+      <a href="categories.html">Kategorier A-Ö</a>
+      <a href="listmaker.html">Slumpa önskelista</a>
+      <a href="favorites.html">Min önskelista</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <div class="searchcontainer">
+      <input id="searchbar" type="text" placeholder="Vad vill du hitta idag?"/>
+      <button id="btn">Hitta julklappar</button>
+    </div>
+  </div>
+</header>
+
+<div class="snow-container"></div>
+
+<main>
+  <h1>Välkommen till Santa's List</h1>
+  <p>Utforska produkter och skapa din önskelista!</p>
+  <div id="product-container"></div>
+</main>
+
+<footer>
+  <p><a href="https://designingtara.com/">Meet the designer</a></p>
+</footer>
+
+<script src="js/snowfall.js"></script> <!-- Snowfall animation -->
+</body>
+
+</html>
+
+categories.html
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kategorier A-Ö</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+  <div class="topmenu">
+    <div class="logo">
+      <img src="Santa.png" height="45" width="45"/>
+      <p>Santa's List</p>
+    </div>
+    <nav id="myTopnav">
+      <a href="index.html">Hem</a>
+      <a href="categories.html" class="active">Kategorier A-Ö</a>
+      <a href="listmaker.html">Slumpa önskelista</a>
+      <a href="favorites.html">Min önskelista</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Kategorier A-Ö</h1>
+  <div class="categories" id="categories-list"></div> <!-- Placeholder for categories -->
+</main>
+
+<footer>
+  <p><a href="https://designingtara.com/">Meet the designer</a></p>
+</footer>
+
+<script src="js/app.js" defer></script>
+</body>
+
+</html>
+
+Listmaker.html
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Slumpa en önskelista</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="topmenu">
+    <div class="logo">
+      <img src="Santa.png" height="45" width="45"/>
+      <p>Santa's List</p>
+    </div>
+    <nav id="myTopnav">
+      <a href="index.html" class="active">Hem</a>
+      <a href="categories.html">Kategorier A-Ö</a>
+      <a href="listmaker.html">Slumpa önskelista</a>
+      <a href="favorites.html">Min önskelista</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <div class="searchcontainer">
+      <input id="searchbar" type="text" placeholder="Vad vill du hitta idag?"/>
+      <button id="btn">Hitta julklappar</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h1>Slå tärningen för att få en slumpmässigt vald önskelista</h1>
+  <button id="roll-dice">Slå tärningen</button>
+  <div id="result"></div>
+</main>
+
+<footer>
+  <p><a href="https://designingtara.com/">Meet the designer</a></p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
+
+Favorites.html
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Min önskelista</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <!-- Repeat header structure from index.html -->
+</header>
+
+<main>
+  <h1>Min önskelista</h1>
+  <div class="favorites-list" id="favorites-list"></div>
+</main>
+
+<footer>
+  <p><a href="https://designingtara.com/">Meet the designer</a></p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
+
+
+

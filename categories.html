@@ -1,22 +1,42 @@
-
-<!-- To Do: insert header and top menu -->
-<!-- To Do: Insert a list of categories that is alphabetized.
-Each letter of the alphabet is an H1, going top to bottom.
-The categories underneath each letter should be going left to right. -->
-
+html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+
 <head>
   <meta charset="UTF-8">
   <title>Kategorier A-Ö</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<div class="categories">
-<h1>This is categories</h1>
+<header>
+  <div class="topmenu">
+    <div class="logo">
+      <img src="Santa.png" height="45" width="45"/>
+      <p>Santa's List</p>
+    </div>
+    <nav id="myTopnav">
+      <a href="index.html">Hem</a>
+      <a href="categories.html" class="active">Kategorier A-Ö</a>
+      <a href="listmaker.html">Slumpa önskelista</a>
+      <a href="favorites.html">Min önskelista</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </div>
+</header>
 
-</div>
+<main>
+  <h1>Kategorier A-Ö</h1>
+  <div class="categories" id="categories-list"></div> <!-- Placeholder for categories -->
+</main>
 
+<footer>
+  <p><a href="https://designingtara.com/">Meet the designer</a></p>
+</footer>
+
+<script src="js/app.js" defer></script>
 </body>
-<!-- To Do: Insert footer -->
+
 </html>

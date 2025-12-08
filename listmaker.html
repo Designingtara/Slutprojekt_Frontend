@@ -1,20 +1,43 @@
-<!-- To Do: insert header and top menu -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <title>Slumpa en önskelista</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div>
-  <H1>Slå tärningen för att få en slumpmässigt vald önskelista</H1>
-<!-- To Do: Display listmaker funktion. -->
- <button>Slå tärningen</button>
-  <H1>Du fick ""</H1>
-</div>
-<div>
-  <!-- To Do: insert the result from the dice roll. See "Listmaker function"-->
-</div>
+<header>
+  <div class="topmenu">
+    <div class="logo">
+      <img src="Santa.png" height="45" width="45"/>
+      <p>Santa's List</p>
+    </div>
+    <nav id="myTopnav">
+      <a href="index.html" class="active">Hem</a>
+      <a href="categories.html">Kategorier A-Ö</a>
+      <a href="listmaker.html">Slumpa önskelista</a>
+      <a href="favorites.html">Min önskelista</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <div class="searchcontainer">
+      <input id="searchbar" type="text" placeholder="Vad vill du hitta idag?"/>
+      <button id="btn">Hitta julklappar</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h1>Slå tärningen för att få en slumpmässigt vald önskelista</h1>
+  <button id="roll-dice">Slå tärningen</button>
+  <div id="result"></div>
+</main>
+
+<footer>
+  <p><a href="https://designingtara.com/">Meet the designer</a></p>
+</footer>
+
+<script src="js/app.js"></script>
 </body>
-<!-- To Do: Insert footer -->
 </html>
