@@ -89,21 +89,20 @@ h2 {
   line-height: 1.25;
 }
 h3 {
-  font-size: 0.8em;
-  font-family: Georgia, serif;
+  font-size: 1em;
+  font-family: Verdana, Geneva, sans-serif;
   line-height: 1.25;
-  font-style: italic;
 }
 p {
   color: #222;
   font-size: 1em;
   font-family: Georgia, serif;
-  line-height: 1.5;
+  line-height: 1.2em;
 }
 /*Footer styling*/
 footer {
   background-color: #e2e2e2;
-  
+
   padding: 5px;
 }
 

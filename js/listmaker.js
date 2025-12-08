@@ -1,7 +1,9 @@
 /* ===========
-    Listmaker: random Christmas list by rolling the dice. Source: websearch and w3shools.com
+    Listmaker function: random Christmas list by rolling of dice.
    ===========
-To Do: ask chatGPT to make a fun dice like this one: https://rolladice.io/ */
+To Do: Help me complete what I've started below, similar to or a simplified version of this: https://rolladice.io/
+What it should do: each dice result returns a list of 10 items, with the formatting of "Min önskelista" in favorites.html
+*/
 const dice = Math.floor(Math.random() * 6) + 1;
 console.log("You rolled a " + dice);
 
