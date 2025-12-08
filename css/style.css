@@ -15,21 +15,67 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-/*Styling topmenu.*/
-.topmenu {
-  display: flex; /*Puts contents in a container and lets them be flexible in size in relation to each content*/
-}
-.topmenu div {
-  margin: 10px;
-  padding: 20px;
 }
 
 body {
 
+
 }
+
+
+/*Class topmenu is a header that contains a responsive navigation bar, logo and icon for . Its position is fixed at the top.*/
+.topmenu {
+  display: flex; /*Puts contents in a container and lets them be flexible in size in relation to each content*/
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+}
+.topmenu {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: darkred;
+
+}
+.searchcontainer {
+  display: flex;
+  width: 800px;
+  position: fixed;
+  top: 100px;
+  gap: 10px;
+
+}
+
+#searchbar {
+  border-radius: 50px;
+  border-color: #999999;
+  border-style: solid;
+  border-width: thin;
+  padding: 10px;
+  width: 500px;
+
+}
+
+#btn {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+
+}
+.headerdiv {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  vertical-align: center;
+
+}
+
+
 /*General font styling*/
 h1 {
   font-size: 1.8em;
@@ -57,15 +103,11 @@ p {
 /*Footer styling*/
 footer {
   background-color: #e2e2e2;
+  
   padding: 5px;
 }
 
-/* Breadcrumb styling */
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
+
 /* ==========================================================================
    Navigation bar
    ========================================================================== */
@@ -78,6 +120,7 @@ ul.breadcrumb {
 .topnav a {
   float: left;
   display: block;
+  background-color: white;
   color: black;
   text-align: center;
   padding: 14px 16px;
@@ -86,6 +129,7 @@ ul.breadcrumb {
   font-family: Verdana, Geneva, sans-serif;
 
 }
+.btn
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -111,34 +155,7 @@ img {
   max-height: 40px;
 
 }
-/* ==========================================================================
-   Breadcrumb: Display list items side by side
-   ========================================================================== */
 
-
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-
-/* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-
-/* Add a color to all links inside the list */
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
-/* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -291,7 +308,7 @@ textarea {
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
+    float: left ;
     display: block;
   }
 }
@@ -334,7 +351,7 @@ textarea {
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ==========================================================================
-
+*/
 @media print {
   *,
   *::before,
@@ -345,7 +362,7 @@ textarea {
     box-shadow: none !important;
     text-shadow: none !important;
   }
-*/
+
   a,
   a:visited {
     text-decoration: underline;
@@ -388,6 +405,6 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid;
-  }
+  }}}
 
 

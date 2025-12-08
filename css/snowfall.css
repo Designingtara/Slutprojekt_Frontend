@@ -1,0 +1,23 @@
+/* Animation snö som faller */
+.snow-container { /* Gör att snön faller på hela sidan */
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none; /* Gör att musinteraktioner går förbi */
+}
+
+.snowflake { /* Bestämmer hur snöflingorna ska falla */
+  position: absolute;
+  top: -5%; /* Snön börjar falla utanför sidan */
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall linear forwards;
+}
+
+/* Animation snöfall, osäker på exakt vad denna gör */
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
