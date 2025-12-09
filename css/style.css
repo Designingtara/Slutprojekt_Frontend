@@ -10,9 +10,24 @@ html {
 
 body {
   background-color: #f0f0f0; /* Light gray background */
-  margin: 0; /* Remove default margin */
+  margin-left: 50px;
+  margin-right: 50px;
+  align-content: center;
   font-family: Verdana, Geneva, sans-serif; /* General font for body */
 }
+header {
+  position: fixed;
+}
+
+button {
+  border: 1px solid #888888;
+  border-radius: 2px;
+  padding: 20px;
+  font-size: 0.8em;
+
+}
+
+
 
 /* ==========================================================================
    Header and Navigation
@@ -20,25 +35,20 @@ body {
 
 .topmenu {
   display: flex;
+  justify-content: space-between;
+  overflow: hidden;
   gap: 10px;
-  padding: 20px;
-  position: fixed;
-  width: 100%;
+  padding: 20px 40px ;
+  align-items: center;
   top: 0;
-  background-color: darkred; /* Header background color */
+  background-color: white; /* Header background color */
 }
 
-.topmenu .logo {
-  display: flex;
-  align-items: center; /* Aligns logo and text vertically */
-}
 
-.topnav {
-  display: flex;
-  gap: 10px; /* Space between navigation links */
-}
 
-.topnav a {
+
+
+#myTopnav a {
   background-color: white;
   color: black;
   text-align: center;
@@ -47,14 +57,16 @@ body {
   transition: background-color 0.3s, color 0.3s; /* Transition effects */
 }
 
-.topnav a:hover {
+#myTopmenu a:hover {
   background-color: darkgray; /* Background on hover */
   color: white; /* Text color on hover */
 }
 
-.topnav a.active {
+#myTopnav a:active {
   background-color: #04AA6D; /* Active link color */
   color: white;
+  text-decoration: none;
+  aria-current="page";
 }
 
 /* ==========================================================================
@@ -76,9 +88,62 @@ body {
 }
 
 #btn {
-  background-color: gray;
-  color: white;
+  background-color: lightgray ;
+  color: black;
   padding: 10px 20px; /* Button padding */
+}
+
+#btn a:hover {
+  background-color: #193520;
+  color: white;
+
+}
+
+/* ==========================================================================
+   Product display
+   ========================================================================== */
+#product-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  background-color: red;
+  p {
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: right;
+  }
+
+
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 310px;
+  background-color: white;
+  padding: 10px;
+  img {
+    max-width: 80%;
+    max-height: 60%;
+
+  }
+}
+.add-to-favorites {
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background-color: #af1c41;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+
 }
 
 /* ==========================================================================
@@ -86,27 +151,29 @@ body {
    ========================================================================== */
 
 h1 {
-  font-size: 2em; /* Main title size */
+  font-size: 1.5em; /* Main title size */
 }
 
 h2 {
-  font-size: 1.5em; /* Subtitle size */
+  font-size: 1.2em; /* Subtitle size */
 }
 
 h3 {
-  font-size: 1.2em; /* Header size */
+  font-size: 0.8em; /* Header size */
 }
 
 p {
-  font-size: 1em; /* Paragraph size */
+  font-size: 0.8em; /* Paragraph size */
 }
 
 /* ==========================================================================
    Footer
    ========================================================================== */
 footer {
+  position: fixed;
   background-color: #e2e2e2;
   padding: 5px;
+
 }
 
 
@@ -116,21 +183,21 @@ footer {
    ========================================================================== */
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+  #myTopnav a:not(:first-child) {
     display: none; /* Hide links except "Home" */
   }
 
-  .topnav.responsive {
+  #myTopnav.responsive {
     position: relative;
   }
 
-  .topnav.responsive a.icon {
+  #myTopnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  .topnav.responsive a {
+  #myTopnav.responsive a {
     float: none;
     display: block;
     text-align: left;
