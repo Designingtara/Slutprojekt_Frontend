@@ -1,48 +1,48 @@
+<!-- Responsiv webbplats där startsidan visar alla produkter från början.
+Filter "Alla" är aktivt och kan bytas utan att man skriver något i sökfältet.
+När man söker på produkter så visas preliminärt resultat medan man skriver.
+Några tweaks återstår i CSS för både responsiv och produktkorten. -->
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Santa's List</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Navigering toppmeny -->
+  <header>
+    <div class="topmenu">
+      <a href="index.html" class="logo-link"><img class="logo" src="icons/SantaBlock.png" height="45" width="auto" alt="Min önskelista.se start"/></a>
 
+      <nav id="myTopnav" aria-label="Huvudnavigering">
+        <a href="index.html" class="active">Hem</a>
+        <a href="favorites.html">Min önskelista</a>
+
+        <!-- Hamburger menu button (for small screens) -->
+        <button class="icon" id="menu-btn" aria-label="Meny" aria-expanded="false">☰</button>
+      </nav>
+      <!-- Inputfield with button for searching products -->
+      <div class="searchcontainer">
+        <input id="searchbar" type="text" placeholder="Vad vill du hitta idag?"/>
+        <button id="btn">Hitta julklappar</button>
+      </div>
+    </div>
+  </header>
 </head>
-
-
-<header>
-  <div class="topmenu">
-    <div class="logo">
-      <a href="index.html" class="active"><img src="icons/SantaBlock.png" height="45" width="auto" alt="Min önskelista.se start"/></a>
-
-    </div>
-    <nav id="myTopnav">
-      <a href="listmaker.html">Slumpa önskelista</a>
-      <a href="favorites.html">Min önskelista</a>
-
-
-    </nav>
-    <div class="searchcontainer">
-      <input id="searchbar" type="text" placeholder="Vad vill du hitta idag?"/>
-      <button id="btn">Hitta julklappar</button>
-    </div>
-  </div>
-</header>
-
-
 <body>
+
+<!-- Display products on product cards in flexcontainer-->
 <main>
-  <h1>Välkommen till Santa's List</h1>
-  <p>Utforska produkter och skapa din önskelista!</p>
+ <div class="welcome"> <h1>Välkommen!</h1>
+  <p>Utforska produkter och skapa din önskelista för att dela med vänner och familj.</p>
+ </div>
+
+  <div id="filter-products"></div>
   <div id="product-container"></div>
 </main>
-
-<footer>
-  <p><a href="https://designingtara.com/">Meet the designer</a></p>
-</footer>
+<!-- Valde att ta bort footer då jag inte blev nöjd med formattering
+<footer></footer>-->
 
 <script src="js/app.js"></script>
 </body>
-
-
 </html>

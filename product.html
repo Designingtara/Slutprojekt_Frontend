@@ -1,17 +1,19 @@
-<!-- Samlingssida för produkter som valts till önskelistan.  -->
+<!-- Detaljvy för produkter -->
+
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <title>Min önskelista</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Produktdetalj — Santa's List</title>
+  <link rel="stylesheet" href="css/style.css" />
   <header>
     <div class="topmenu">
       <a href="index.html" class="logo-link"><img class="logo" src="icons/SantaBlock.png" height="45" width="auto" alt="Min önskelista.se start"/></a>
 
       <nav id="myTopnav" aria-label="Huvudnavigering">
-        <a href="index.html" >Hem</a>
-        <a href="favorites.html" class="active">Min önskelista</a>
+        <a href="index.html" class="active">Hem</a>
+        <a href="favorites.html">Min önskelista</a>
 
 
         <button class="icon" id="menu-btn" aria-label="Meny" aria-expanded="false">☰</button>
@@ -26,19 +28,16 @@
 </head>
 <body>
 
+
 <main>
-  <!-- En statisk (ej klickbar) delaknapp -->
-  <div class="share"><h1>Min önskelista</h1>
-    <div class="share-btn"><img class="share-btn-img" src="icons/Sleigh.png" height="40" width="auto"/>
-    <p class="share-p">Dela lista</p>
-  </div></div>
-  <!-- Visar produkter vars knapp "Lägg till i önskelista" är klickad -->
-  <div class="favorites-list" id="favorites-list"></div>
+  <!-- Detalj-vyn fylls via JS -->
+  <div id="product-detail" class="product-detail">
+    <p>Laddar produkt...</p>
+  </div>
 </main>
 
 
 
 <script src="js/app.js"></script>
 </body>
-
 </html>
